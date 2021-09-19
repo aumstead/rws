@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>RWS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="rws-logo" src="assets/logo.png" alt="RWS logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="toggle-mobile-nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">Benefits</a>
+            <a class="nav-link" href="#">Pricing & Plans</a>
+            <a class="nav-link" href="#">Order Warranty</a>
+            <a class="nav-link" href="#">Contractors</a>
+          </div>
+          <div class="buttons-container">
+            <a class="circle-btn-link login-btn">Login</a>
+            <a class="circle-btn-link sign-up-btn">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="mobile-nav" id="side-nav">
+      <div class="mobile-nav-btns">
+        <a class="circle-btn-link mobile-login-btn">Login</a>
+        <a class="circle-btn-link sign-up-btn">Sign up</a>
+      </div>
+      <hr class="mobile-nav-hr" />
+      <ul>
+        <li><a class="" href="#">Benefits</a></li>
+        <li><a class="" href="#">Pricing & Plans</a></li>
+        <li><a class="" href="#">Order Warranty</a></li>
+        <li><a class="" href="#">Contractors</a></li>
+      </ul>
+    </nav>
+
+    <section style="padding-top: 80px">
+      <div class="hero">
+        <div class="hero-left">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            numquam omnis velit repellat eius quas? Dolorum iure eos rerum?
+            Tempora quidem aut aliquid eum odio.
+          </p>
+          <div class="hero-left__btns">
+            <a class="circle-btn-link sign-up-btn">APPLY NOW</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img
+            class="rws-building"
+            src="assets/myrws-building1.png"
+            alt="RWS building"
+          />
+          <div class="hero-right__text">
+            <span id="hero-anim" class="animate-hero-text">Lorem Coverage</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel-section">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+      <div class="carousel-container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/carousel/map.png"
+                class="d-block w-100"
+                alt="RWS map"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/carousel/PremierSlide.png"
+                class="d-block w-100"
+                alt="Premier slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/carousel/PRPPSlide.png"
+                class="d-block w-100"
+                alt="PRPPSlide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/carousel/SewerGardSlid.png"
+                class="d-block w-100"
+                alt="Sewer Gard"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container video">
+      <div class="video__left">
+        <iframe
+          src="https://iplayerhd.com/player/video/c9184464-b74d-4c6e-8bac-061905fae483"
+          width="450"
+          height="299"
+          allowfullscreen="true"
+          scrolling="no"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="video__right">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          adipisci consequatur ipsum, similique debitis autem!
+        </p>
+        <div class="video-link">
+          <a href="#" class="flat-link"
+            >Read more lorem <span class="arrow"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-started-section">
+      <div class="container-xl get-started-container">
+        <h2 class="text-center">Get Started with RWS</h2>
+        <div class="row get-started-row">
+          <div class="col get-started-col">
+            <span>1</span>
+            <h3>Choose a policy</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              iste recusandae nam.
+            </p>
+          </div>
+          <div class="col get-started-col">
+            <span>2</span>
+            <h3>Fill out application</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              tempora vitae, ad sit adipisci minus nostrum!
+            </p>
+          </div>
+          <div class="col get-started-col">
+            <span>3</span>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+              tenetur sit eaque aperiam laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="redirect-cards-section">
+      <div class="container redirect-cards-container">
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img src="/assets/cards/reading.png" alt="Man reading" />
+          </div>
+          <div class="card-content">
+            <h3>Learn about the benefits of home warranties.</h3>
+            <div class="card-cta">
+              <span>Read benefits</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img
+              src="assets/cards/pricing.png"
+              alt="Man examining diamond with magnifying glass"
+            />
+          </div>
+          <div class="card-content">
+            <h3>See how we price our Premier and Simple warranty packages.</h3>
+            <div class="card-cta">
+              <span>See pricing</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img
+              src="assets/cards/estimate.png"
+              alt="Woman in giant magnifying glass"
+            />
+          </div>
+          <div class="card-content">
+            <h3>
+              Get an estimate for your property. Lorem ipsum dolor sit amet.
+            </h3>
+            <div class="card-cta">
+              <span>Request quote</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img src="assets/cards/claim.png" alt="Man on laptop" />
+          </div>
+          <div class="card-content">
+            <h3>Already have a policy? Submit a claim here!</h3>
+            <div class="card-cta">
+              <span>Submit claims</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="premier-section">
+      <div class="container premier-container">
+        <div class="premier__left">
+          <h6>Just Launched</h6>
+          <h2>Lorem Premier</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+            dolor enim ad ipsum. Dolores dolor veniam maiores sapiente.
+          </p>
+          <div class="premier-btns">
+            <a class="circle-btn-link sign-up-btn">Read More</a>
+          </div>
+        </div>
+        <div class="premier__right">
+          <img
+            src="assets/Pricing_Plans_Premier.png.png"
+            alt="Premier pricing plan"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="simple-section">
+      <div class="container simple-container">
+        <div class="simple__left">
+          <img
+            src="assets/Pricing_Plans_Simple.png.png"
+            alt="Simple pricing plan"
+          />
+        </div>
+        <div class="simple__right">
+          <h2>Lorem Simple</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
+            repudiandae, soluta dolorum laborum atque, ipsum illum blanditiis ut
+            aliquid tempore recusandae!
+          </p>
+          <div class="simple-btns">
+            <a class="circle-btn-link sign-up-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2 class="text-center">Secure your home with us.</h2>
+      <div class="cta-btns">
+        <a class="cta-btn-white" href="#">Apply Now</a>
+        <a class="cta-btn-transparent" href="#">Ask us a question</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="logo-col">
+            <img style="height: 5rem" src="assets/logo.png" alt="RWS logo" />
+          </div>
+          <div class="links-col">
+            <h6>Why RWS</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Product</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Contact Us</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="img-col">
+            <img src="assets/security.png" alt="Man defending animation" />
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="copyright">
+            <span>&copy;2021 Residential Warranty Services, Inc.</span>
+            <span
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quo.</span
+            >
+          </div>
+          <div class="legal-links">
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
