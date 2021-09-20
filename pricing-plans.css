@@ -1,0 +1,41 @@
+main {
+  padding-top: 80px;
+}
+
+.hero {
+  display: flex;
+  height: 50vh;
+  min-height: 350px;
+}
+
+.hero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6rem;
+}
+
+.hero-left h1 {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+}
+
+.hero-left p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.hero-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compare img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
