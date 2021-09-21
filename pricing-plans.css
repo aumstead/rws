@@ -2,13 +2,14 @@ main {
   padding-top: 80px;
 }
 
-.hero {
+/* Pricing Hero Section */
+.pricing-hero {
   display: flex;
-  height: 50vh;
-  min-height: 350px;
+  height: 60vh;
+  min-height: 450px;
 }
 
-.hero-left {
+.pricing-hero-left {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -16,17 +17,21 @@ main {
   padding: 0 6rem;
 }
 
-.hero-left h1 {
+.pricing-hero-left h1 {
   font-family: var(--font-heading);
   font-size: 4rem;
 }
 
-.hero-left p {
+.pricing-hero-left p {
   font-size: 1.4rem;
   font-weight: 300;
 }
 
-.hero-right {
+.pricing-hero-btns {
+  width: fit-content;
+}
+
+.pricing-hero-right {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -34,8 +39,185 @@ main {
   align-items: center;
 }
 
-.compare img {
+.pricing-hero-right img {
+  max-height: 300px;
+}
+
+/* Pricing Cards Section */
+.pricing-cards-section {
+  background-color: var(--color-background-gray);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pricing-cards-section h2 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.pricing-cards-container {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-around;
+}
+
+.pricing-cards-card {
+  width: 320px;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
+  background-color: white;
+}
+
+.pricing-cards-card--premier {
+  border: 3px solid var(--color-red);
+}
+
+.pricing-cards-card h3 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.pricing-cards-card p {
+  color: var(--color-dark-gray);
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+.pricing-cards-card__cta {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+.pricing-cards-card a {
+  color: white;
+  background-color: var(--color-red);
+  font-weight: 500;
+}
+
+.pricing-cards-card a:hover {
+  background-color: var(--color-dark-red);
+}
+
+.pricing-cards-card__prices-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-cards-card__total {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.pricing-cards-card__month {
+  font-size: 1.4rem;
+}
+
+.pricing-cards-card ul {
+  list-style-image: url("/assets/svgs/check.svg");
+  padding-left: 2.5rem;
+}
+
+.pricing-cards-card ul li:last-child {
+  list-style-image: url("assets/svgs/add.svg");
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Pricing Simple Section */
+.pricing-simple-container {
+  display: flex;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.pricing-simple__left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing-simple__left img {
   width: 80%;
+}
+.pricing-simple__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+}
+.pricing-simple__right h2 {
+  font-size: 3.5rem;
+  font-family: var(--font-heading);
+}
+
+.pricing-simple-btns {
+  margin-top: 1rem;
+}
+
+/* Full Feature Section */
+.full-feature {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: var(--color-background-gray);
+}
+.full-feature h2 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.full-feature table {
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.full-feature table thead img {
+  height: 3rem;
+  width: auto;
   margin: 0 auto;
   display: block;
+}
+
+.full-feature-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  padding: 0.5rem;
+}
+
+.full-feature-heading a {
+  color: white;
+  background-color: var(--color-red);
+  font-weight: 500;
+  margin: 0.5rem auto;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.2s;
+}
+
+.full-feature-heading__title {
+  font-size: 1.2rem;
+}
+
+.full-feature-heading__price {
+  color: var(--color-dark-gray);
+}
+
+.full-feature-body td {
+  text-align: center;
+}
+
+.full-feature-body td:not(:last-child) {
+  border-right: 2px solid var(--color-dark-gray);
+}
+
+.full-feature-body tr:nth-child(even) {
+  background-color: rgb(235, 235, 235);
 }
