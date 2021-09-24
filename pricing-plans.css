@@ -60,10 +60,13 @@ main {
   display: flex;
   margin-top: 4rem;
   justify-content: space-around;
+  flex-wrap: wrap-reverse;
 }
 
 .pricing-cards-card {
-  width: 320px;
+  width: 31%;
+  min-width: 280px;
+  max-width: 320px;
   box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
   background-color: white;
 }
@@ -166,6 +169,7 @@ main {
   font-family: var(--font-heading);
   font-size: 3.5rem;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .full-feature table {
@@ -220,4 +224,106 @@ main {
 
 .full-feature-body tr:nth-child(even) {
   background-color: rgb(235, 235, 235);
+}
+
+@media only screen and (max-width: 1200px) {
+  .pricing-hero-left {
+    padding: 0 2rem;
+  }
+  .pricing-simple__right {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .pricing-hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    height: unset;
+  }
+
+  .pricing-hero-left {
+    width: unset;
+  }
+  .pricing-hero-right {
+    width: unset;
+    margin-top: 1rem;
+  }
+
+  .pricing-cards-section {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .pricing-cards-container {
+    margin-top: 2rem;
+  }
+  .pricing-cards-card {
+    margin-bottom: 2rem;
+  }
+
+  .pricing-simple-container {
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .pricing-simple__left {
+    width: unset;
+  }
+  .pricing-simple__left img {
+    width: unset;
+    max-height: 150px;
+  }
+  .pricing-simple__right {
+    width: unset;
+    margin-top: 2rem;
+  }
+
+  .full-feature {
+    padding: 4rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .full-feature-heading {
+    width: 190px;
+  }
+  .full-feature-heading__title {
+    font-size: 1rem;
+  }
+  .full-feature-body th {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .full-feature {
+    padding: 4rem 1rem;
+  }
+  .full-feature-heading {
+    width: unset;
+  }
+  .full-feature-heading a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing-hero-right img {
+    max-height: unset;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .full-feature {
+    padding: 4rem 0.5rem;
+  }
+  .full-feature-heading__title {
+    font-size: 0.8rem;
+  }
+  .full-feature-heading__price {
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+  }
 }

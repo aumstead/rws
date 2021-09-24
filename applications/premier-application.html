@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>RWS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="premier-application.css" />
+  </head>
+
+  <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img class="rws-logo" src="../assets/logo.png" alt="RWS logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="toggle-mobile-nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">Benefits</a>
+            <a class="nav-link" href="/pricing-plans.html">Pricing & Plans</a>
+            <a class="nav-link" href="#">Order Warranty</a>
+            <a class="nav-link" href="#">Contractors</a>
+          </div>
+          <div class="buttons-container">
+            <a class="circle-btn-link login-btn">Login</a>
+            <a class="circle-btn-link sign-up-btn">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="mobile-nav" id="side-nav">
+      <div class="mobile-nav-btns">
+        <a class="circle-btn-link mobile-login-btn">Login</a>
+        <a class="circle-btn-link sign-up-btn">Sign up</a>
+      </div>
+      <hr class="mobile-nav-hr" />
+      <ul>
+        <li><a class="" href="#">Benefits</a></li>
+        <li><a class="" href="#">Pricing & Plans</a></li>
+        <li><a class="" href="#">Order Warranty</a></li>
+        <li><a class="" href="#">Contractors</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="order-hero">
+        <div class="flex-container">
+          <div class="order-hero-left">
+            <h1>Premier Warranty Application</h1>
+            <p>
+              Provide information below and hit 'Submit'.
+            </p>
+            
+          </div>
+          <div class="order-hero-right">
+            <img
+              src="../assets/svgs/form.png"
+              alt="Robot filling in form"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="premier-order-form">
+        <form action="">
+          <div class="premier-order-form__personal">
+            <h2>About you</h2>
+            <hr/>
+            <p class="custom-label">What is your role in the purchasing of this warranty?<span class="asterisk">&nbsp;*</span></p>
+            <div class="ordered-by-radios">
+              <input type="radio" id="buyer" name="ordered-by" value="buyer">
+              <label for="buyer">Buyer</label>
+              <input type="radio" id="buyer-agent" name="ordered-by" value="buyer-agent" >
+              <label for="buyer-agent">Buyer's Agent</label>
+              <input type="radio" id="listing-agent" name="ordered-by" value="listing-agent" >
+              <label for="listing-agent">Listing Agent</label>
+              <input type="radio" id="seller" name="ordered-by" value="seller" >
+              <label for="seller">Seller</label>
+              <input type="radio" id="title-company" name="ordered-by" value="title-company" >
+              <label for="title-company">Title Company</label>
+            </div>
+            <p class="custom-label">Coverage type<span class="asterisk">&nbsp;*</span></p>
+            <div class="coverage-type-radios">
+              <input type="radio" id="buyer-coverage" name="coverage-type" value="buyer-coverage">
+              <label for="buyer-coverage">Buyer's Coverage</label>
+              <input type="radio" id="listing-coverage" name="coverage-type" value="listing-coverage">
+              <label for="listing-coverage">Listing Coverage</label>
+              <input type="radio" id="current-home-owner" name="coverage-type" value="current-home-owner">
+              <label for="current-home-owner">Current Home Owner</label>
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="first-name">Your First Name<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="2" maxlength="20" name="first-name">
+              </div>
+              <div class="label-input-pair">
+                <label for="last-name">Your Last Name<span class="asterisk">&nbsp;*</span></label>
+                <input type="text" required minlength="2" maxlength="20" name="last-name">
+              </div>
+            </div>
+            <div class="label-input-pair">
+              <label for="email">Your Email<span class="asterisk">&nbsp;*</span></label>
+              <input required type="email" maxlength="25" name="email">
+            </div>
+          </div>
+
+          <div class="premier-order-form__property">
+            <h2>Property to be covered</h2>
+            <hr/>
+            <div class="label-input-pair">
+              <label for="street">Street Address<span class="asterisk">&nbsp;*</span></label>
+              <input required type="text" minlength="2" maxlength="20" name="street">
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="city">City<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="1" maxlength="20" name="city">
+              </div>
+              <div class="label-input-pair label-input-pair--state">
+                <label for="state">State<span class="asterisk">&nbsp;*</span></label>
+                <select required id="state" name="state">
+                  <option value="">Select State</option>
+                </select>
+              </div>
+              <div class="label-input-pair label-input-pair--zip">
+                <label for="zip">Zip<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="1" maxlength="15" name="zip">
+              </div>
+            </div>
+
+            <!-- dynamic -->
+            <div id="buyer-info-group" class="buyer-info-group hide-element">
+              <div class="flex-group">
+                <div class="label-input-pair">
+                  <label for="buyer-first-name">Buyer's First Name<span class="asterisk">&nbsp;*</span></label>
+                  <input required type="text" minlength="2" maxlength="20" name="buyer-first-name">
+                </div>
+                <div class="label-input-pair">
+                  <label for="buyer-last-name">Buyer's Last Name<span class="asterisk">&nbsp;*</span></label>
+                  <input type="text" required minlength="2" maxlength="20" name="buyer-last-name">
+                </div>
+              </div>
+              <div class="flex-group">
+                <div class="label-input-pair">
+                  <label for="buyer-email">Buyer's Email</label>
+                  <input type="email" minlength="3" maxlength="20" name="buyer-email">
+                </div>
+                <div class="label-input-pair">
+                  <label for="buyer-phone">Buyer's Phone</label>
+                  <input type="text" minlength="7" maxlength="20" name="buyer-phone">
+                </div>
+              </div>
+              <div class="flex-group">
+                <div class="label-input-pair">
+                  <label for="add-buyer-first-name">Additional Buyer's First Name</label>
+                  <input type="text" minlength="2" maxlength="20" name="add-buyer-first-name">
+                </div>
+                <div class="label-input-pair">
+                  <label for="add-buyer-last-name">Additional Buyer's Last Name</label>
+                  <input type="text" required minlength="2" maxlength="20" name="add-buyer-last-name">
+                </div>
+              </div>
+            </div>
+
+            <!-- dynamic -->
+            <div id="seller-info-group" class="seller-info-group hide-element">
+              <div class="flex-group">
+                <div class="label-input-pair">
+                  <label for="seller-first-name">Seller's First Name<span class="asterisk">&nbsp;*</span></label>
+                  <input required type="text" minlength="2" maxlength="20" name="seller-first-name">
+                </div>
+                <div class="label-input-pair">
+                  <label for="seller-last-name">Seller's Last Name<span class="asterisk">&nbsp;*</span></label>
+                  <input type="text" required minlength="2" maxlength="20" name="seller-last-name">
+                </div>
+              </div>
+              <div class="flex-group">
+                <div class="label-input-pair">
+                  <label for="seller-email">Seller's Email</label>
+                  <input type="email" minlength="3" maxlength="20" name="seller-email">
+                </div>
+                <div class="label-input-pair">
+                  <label for="seller-phone">Seller's Phone</label>
+                  <input type="text" minlength="7" maxlength="20" name="seller-phone">
+                </div>
+              </div>
+              <div class="flex-group">
+                <div class="label-input-pair">
+                  <label for="add-seller-first-name">Additional Seller's First Name</label>
+                  <input type="text" minlength="2" maxlength="20" name="add-seller-first-name">
+                </div>
+                <div class="label-input-pair">
+                  <label for="add-seller-last-name">Additional Seller's Last Name</label>
+                  <input type="text" required minlength="2" maxlength="20" name="add-seller-last-name">
+                </div>
+              </div>
+            </div>
+
+            <!-- dynamic -->
+            <div id="procuring-agent-group" class="procuring-agent-group hide-element">
+              <p class="custom-label">Procuring Agent<span class="asterisk">&nbsp;*</span></p>
+              <div class="ordered-by-radios">
+                <input type="radio" id="procuring-agent-buyer-agent" name="procuring-agent" value="buyer-agent">
+                <label for="procuring-agent-buyer-agent">Buyer's Agent</label>
+                <input type="radio" id="procuring-agent-listing-agent" name="procuring-agent" value="listing-agent" >
+                <label for="procuring-agent-listing-agent">Listing Agent</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- dynamic -->
+          <div id="buyer-agent-info" class="premier-order-form__buyer-agent hide-element">
+            <h2>Buyer's Agent</h2>
+            <hr/>
+            <div class="label-input-pair">
+              <label for="buyer-agent-office">Buyer Agent's Office<span id="buyer-agent-office-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+              <input type="text" minlength="3" maxlength="20" name="buyer-agent-office" id="buyer-agent-office-input">
+            </div>
+            <div class="label-input-pair">
+              <label for="buyer-agent-office-address">Buyer Agent's Office Address</label>
+              <input type="text" minlength="1" maxlength="20" name="buyer-agent-office-address">
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="city">City</label>
+                <input type="text" minlength="1" maxlength="20" name="city">
+              </div>
+              <div class="label-input-pair label-input-pair--state">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                  <option value="">Select State</option>
+                </select>
+              </div>
+              <div class="label-input-pair label-input-pair--zip">
+                <label for="zip">Zip</label>
+                <input type="text" minlength="1" maxlength="15" name="zip">
+              </div>
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="buyer-agent-name">Buyer Agent's Name<span id="buyer-agent-name-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+                <input type="text" minlength="2" maxlength="40" name="buyer-agent-name" id="buyer-agent-name-input">
+              </div>
+              <div class="label-input-pair">
+                <label for="buyer-agent-phone">Buyer Agent's Phone<span id="buyer-agent-phone-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+                <input type="text" minlength="7" maxlength="20" name="buyer-agent-phone" id="buyer-agent-phone-input">
+              </div>
+            </div>
+            <div class="label-input-pair">
+              <label for="buyer-agent-email">Buyer Agent's Email<span id="buyer-agent-email-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+              <input type="email" maxlength="25" name="buyer-agent-email" id="buyer-agent-email-input">
+            </div>
+          </div>
+
+          <!-- dynamic -->
+          <div id="listing-agent-info" class="premier-order-form__listing-agent hide-element">
+            <h2>Listing Agent</h2>
+            <hr/>
+            <div class="label-input-pair">
+              <label for="listing-agent-office">Listing Agent's Office<span id="listing-agent-office-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+              <input id="listing-agent-office-input" type="text" minlength="3" maxlength="20" name="listing-agent-office">
+            </div>
+            <div class="label-input-pair">
+              <label for="listing-agent-office-address">Listing Agent's Office Address</label>
+              <input type="text" minlength="1" maxlength="20" name="listing-agent-office-address">
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="city">City</label>
+                <input type="text" minlength="1" maxlength="20" name="city">
+              </div>
+              <div class="label-input-pair label-input-pair--state">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                  <option value="">Select State</option>
+                </select>
+              </div>
+              <div class="label-input-pair label-input-pair--zip">
+                <label for="zip">Zip</label>
+                <input type="text" minlength="1" maxlength="15" name="zip">
+              </div>
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="listing-agent-name">Listing Agent's Name<span id="listing-agent-name-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+                <input id="listing-agent-name-input" type="text" minlength="2" maxlength="40" name="listing-agent-name">
+              </div>
+              <div class="label-input-pair">
+                <label for="listing-agent-phone">Listing Agent's Phone<span id="listing-agent-phone-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+                <input id="listing-agent-phone-input" type="text" required minlength="7" maxlength="20" name="listing-agent-phone">
+              </div>
+            </div>
+            <div class="label-input-pair">
+              <label for="listing-agent-email">Listing Agent's Email<span id="listing-agent-email-asterisk" class="asterisk hide-element">&nbsp;*</span></label>
+              <input id="listing-agent-email-input" type="email" maxlength="25" name="listing-agent-email">
+            </div>
+            <div id="listing-agent-coverage-start-date-div" class="label-input-pair hide-element">
+              <label for="listing-agent-coverage-start-date">Coverage Start Date<span class="asterisk">&nbsp;*</span></label>
+              <input type="date" name="listing-agent-coverage-start-date">
+            </div>
+          </div>
+
+          <!-- dynamic -->
+          <div id="deliver-to-group" class="premier-order-form__deliver-to hide-element">
+            <hr>
+            <div class="label-input-pair">
+              <label for="deliver-to">Deliver Policy To<span class="asterisk">&nbsp;*</span></label>
+              <select id="deliver-to" name="deliver-to">
+                <option value="">Select One</option>
+                <option value="closing">Closing</option>
+                <option value="agent">Agent</option>
+                <option value="residence">Residence</option>
+              </select>
+            </div>
+            <div class="label-input-pair">
+              <label for="closing-date">Closing Date<span class="asterisk">&nbsp;*</span></label>
+              <input type="date">
+            </div>
+          </div>
+
+          <div class="premier-order-form__pricing-guide">
+            <h2>Pricing</h2>
+            <hr/>
+            <p>Price is determined by total square footage (including basement). See table below.</p>
+            <table>
+              <tr>
+                <th>Square Feet</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Less than 1,500</td>
+                <td>$629</td>
+              </tr>
+              <tr>
+                <td>1,501 - 2,500</td>
+                <td>$709</td>
+              </tr>
+              <tr>
+                <td>2,501 - 3,000</td>
+                <td>$749</td>
+              </tr>
+              <tr>
+                <td>3,001 - 4,000</td>
+                <td>$799</td>
+              </tr>
+              <tr>
+                <td>4,001 - 5,000</td>
+                <td>$989</td>
+              </tr>
+              <tr>
+                <td>5,001 - 6,000</td>
+                <td>$1,199</td>
+              </tr>
+              <tr>
+                <td>6,001 - 9,999</td>
+                <td>$0.20 / sq. ft.</td>
+              </tr>
+              <tr>
+                <td>10,000 sq. ft. + </td>
+                <td>$0.23 / sq. ft.</td>
+              </tr>
+            </table>
+            <div class="flex-group">
+              <div class="label-input-pair label-input-pair--sq-ft">
+                <label for="sq-footage">Square Footage<span class="asterisk">&nbsp;*</span></label>
+                <input id="square-footage" required type="number" name="sq-footage">
+              </div>
+              <div class="label-input-pair">
+
+                <p class="custom-label">Your policy cost:</p>
+                <span id="total-cost" class="total-cost"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premier-order-form__add-coverages">
+            <h2>Additional Coverages (optional)</h2>
+            <hr/>
+            <div class="label-input-pair">
+              <label for="deductible-buydown">$75 Deductible Buydown (+$75.00)</label>
+              <select id="deductible-buydown">
+                <option value="false">Not Included</option>
+                <option value="true">Include (+$75.00)</option>
+              </select>
+            </div>
+            <div class="label-input-pair">
+              <label for="condo-discount">Condo Discount (-$20.00)</label>
+              <select id="condo-discount">
+                <option value="false">Not Included</option>
+                <option value="true">Include (-$20.00)</option>
+              </select>
+            </div>
+            <div class="label-input-pair">
+              <label for="mold-safe">Mold Safe ($85.00)</label>
+              <select id="mold-safe">
+                <option value="false">Not Included</option>
+                <option value="true">Include (+$85.00)</option>
+              </select>
+            </div>
+            <div class="label-input-pair">
+              <label for="pool-spa">Pool & Spa Coverage ($185.00)</label>
+              <select id="pool-spa">
+                <option value="false">Not Included</option>
+                <option value="true">Include (+$185.00)</option>
+              </select>
+            </div>
+            <div class="label-input-pair">
+              <label for="septic-tank">Septic Tank Pumping ($45.00)</label>
+              <select id="septic-tank">
+                <option value="false">Not Included</option>
+                <option value="true">Include (+$45.00)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- dynamic -->
+          <div id="special-offer" class="premier-order-form__special-offer hide-element">
+            <hr>
+            <h6>SPECIAL OFFER! GET $20 OFF YOUR POLICY, PLUS CONCIERGE LEVEL SERVICE, INCLUDING: UTILITIES, CABLE, PHONE, INTERNET, AND SECURITY!</h6>
+            <p class="special-offer-text">*A valid home buyer phone number must be provided in order to receive the discount. A Concierge representative will contact the home buyer to setup utilities and other home services. Home Buyer is not required to take advantage of offered services.</p>
+            <p class="custom-label">Your special offer discount is selected below<span class="asterisk">&nbsp;*</span></p>
+            <div class="special-offer-radios">
+              <div>
+                <input type="radio" id="policy-price" name="special-offer" value="policy-price" checked>
+                <label for="policy-price">$20 off policy price - Now!</label>
+              </div>
+              <div>
+                <input type="radio" id="deductible" name="special-offer" value="deductible" >
+                <label for="deductible">$20 off 1st deductible or service call</label>
+              </div>
+              <div>
+                <input type="radio" id="decline" name="special-offer" value="decline" >
+                <label for="decline">Decline discount</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="premier-order-form__notes">
+            <div class="label-input-pair">
+              <label for="notes">Notes</label>
+              <textarea name="notes" id="notes" rows="3"></textarea>              
+            </div>
+          </div>
+
+          <div class="premier-order-form__go-green">
+            <p class="custom-label">Go Green?<span class="asterisk">&nbsp;*</span></p>
+            <div class="flex-box--yes">
+              <input type="radio" id="yes" name="go-green" value="true" checked>
+              <label for="yes">Yes! I want myself and the policy holder to receive all correspondance and policy documents electronically via email!</label>
+            </div>
+            <div class="flex-box--no">
+              <input type="radio" id="no" name="go-green" value="false" >
+              <label for="no">No, thank you. Please send all policy documents via standard mail.</label>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+
+      </section>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="logo-col">
+            <img style="height: 5rem" src="../assets/logo.png" alt="RWS logo" />
+          </div>
+          <div class="links-col">
+            <h6>Why RWS</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Product</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Contact Us</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="img-col">
+            <img src="../assets/security.png" alt="Man defending animation" />
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="copyright">
+            <span>&copy;2021 Residential Warranty Services, Inc.</span>
+            <span
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quo.</span
+            >
+          </div>
+          <div class="legal-links">
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../global.js"></script>
+    <script src="./premier-application.js"></script>
+  </body>
+</html>

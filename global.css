@@ -5,6 +5,7 @@
   --color-dark-red: #b11832;
   --color-background-gray: rgb(243 243 243);
   --color-dark-gray: #5a5a5a;
+  --color-gray: #a1a1a1;
   --font-heading: "Bebas Neue", cursive;
 }
 
@@ -12,7 +13,20 @@ body {
   font-size: 1rem;
 }
 
+/* padding for navbar */
+main {
+  padding-top: 80px;
+}
+
 /* Links */
+.plain-link {
+  color: var(--color-red);
+  text-decoration: none;
+  font-weight: 500;
+}
+.plain-link:hover {
+  color: var(--color-dark-red);
+}
 .flat-link {
   color: var(--color-red);
   text-decoration: none;
