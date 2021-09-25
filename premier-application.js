@@ -261,9 +261,9 @@ function calculateCost(e) {
   } else if (sqFt <= 6000) {
     totalCost = 1199;
   } else if (sqFt <= 9999) {
-    totalCost = sqFt * 0.2;
+    totalCost = (sqFt * 0.2).toFixed(2);
   } else {
-    totalCost = sqFt * 0.23;
+    totalCost = (sqFt * 0.23).toFixed(2);
   }
   return totalCost;
 }

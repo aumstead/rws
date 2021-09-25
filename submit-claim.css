@@ -1,0 +1,12 @@
+.claim-form .flex-group {
+  display: flex;
+}
+.claim-form .label-input-pair {
+  width: 50%;
+}
+.premier-order-form .label-input-pair textarea {
+  margin-right: 2rem;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 0.5rem 0.7rem;
+  border-radius: 3px;
+}

@@ -31,12 +31,53 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#">Benefits</a>
-            <a class="nav-link" href="/pricing-plans.html">Pricing & Plans</a>
-            <a class="nav-link" href="#">Order Warranty</a>
-            <a class="nav-link" href="#">Contractors</a>
-          </div>
+          <ul class="navbar-nav">
+            <li id="warranty-plans-dropdown-nav-item" class="dropdown-nav-item">
+              Warranty Plans
+              <ul
+                id="warranty-plans-dropdown-menu"
+                class="dropdown-menu hide-element"
+              >
+                <li>
+                  <a href="./premier-policy.html" class="dropdown-link"
+                    >Premier</a
+                  >
+                </li>
+                <li>
+                  <a href="./simple-policy.html" class="dropdown-link"
+                    >Simple</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="purchase-dropdown-nav-item" class="dropdown-nav-item">
+              Purchase Warranty
+              <ul
+                id="purchase-dropdown-menu"
+                class="dropdown-menu hide-element"
+              >
+                <li>
+                  <a href="./premier-application.html" class="dropdown-link"
+                    >Buy Premier</a
+                  >
+                </li>
+                <li>
+                  <a href="./simple-application.html" class="dropdown-link"
+                    >Buy Simple</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="/pricing-plans.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./submit-claim.html">Submit Claim</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./request-quote.html">Request Quote</a>
+            </li>
+          </ul>
           <div class="buttons-container">
             <a class="circle-btn-link login-btn">Login</a>
             <a class="circle-btn-link sign-up-btn">Sign up</a>
@@ -45,23 +86,79 @@
       </div>
     </nav>
 
-    <nav class="mobile-nav" id="side-nav">
-      <div class="mobile-nav-btns">
-        <a class="circle-btn-link mobile-login-btn">Login</a>
-        <a class="circle-btn-link sign-up-btn">Sign up</a>
+    <div id="side-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a class="navbar-brand" href="/index.html">
+          <img class="rws-logo" src="assets/logo.png" alt="RWS logo" />
+        </a>
+        <button id="mobile-close" type="button" class="close-btn">
+          <img
+            src="/assets/svgs/close-white.svg"
+            alt="X for closing mobile navigation"
+          />
+        </button>
       </div>
-      <hr class="mobile-nav-hr" />
-      <ul>
-        <li><a class="" href="#">Benefits</a></li>
-        <li><a class="" href="#">Pricing & Plans</a></li>
-        <li><a class="" href="#">Order Warranty</a></li>
-        <li><a class="" href="#">Contractors</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <div class="mobile-nav-btns">
+          <a class="mobile-circle-btn mobile-login-btn">Login</a>
+          <a class="mobile-circle-btn mobile-sign-up-btn">Sign up</a>
+        </div>
+        <hr class="mobile-nav-hr" />
+        <ul>
+          <li
+            id="mobile-plans-dropdown-nav-item"
+            class="mobile-dropdown-nav-item"
+          >
+            Warranty Plans
+          </li>
+          <li
+            id="mobile-plans-dropdown-menu"
+            class="mobile-dropdown-menu hide-element"
+          >
+            <ul>
+              <li>
+                <a href="./premier-policy.html" class="dropdown-link"
+                  >Premier</a
+                >
+              </li>
+              <li>
+                <a href="./simple-policy.html" class="dropdown-link">Simple</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            id="mobile-purchase-dropdown-nav-item"
+            class="mobile-dropdown-nav-item"
+          >
+            Purchase Warranty
+          </li>
+          <li
+            id="mobile-purchase-dropdown-menu"
+            class="mobile-dropdown-menu hide-element"
+          >
+            <ul>
+              <li>
+                <a href="./premier-application.html" class="dropdown-link"
+                  >Buy Premier</a
+                >
+              </li>
+              <li>
+                <a href="./simple-application.html" class="dropdown-link"
+                  >Buy Simple</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a class="" href="/pricing-plans.html">Pricing</a></li>
+          <li><a class="" href="submit-claim.html">Submit Claim</a></li>
+          <li><a class="" href="request-quote.html">Request Quote</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <section>
-        <div class="container simple-hero">
+        <div class="simple-hero">
           <div class="simple-hero-left">
             <h1>Lorem simple</h1>
             <p>
@@ -69,7 +166,7 @@
               consequatur dignissimos eum.
             </p>
             <div class="simple-hero-btns">
-              <a href="#" class="flat-link"
+              <a href="/simple-application.html" class="flat-link"
                 >Apply for our Simple Warranty today <span class="arrow"></span
               ></a>
             </div>
@@ -139,13 +236,13 @@
     <section class="cta-section">
       <h2 class="text-center">Secure your home with the simple warranty.</h2>
       <div class="cta-btns">
-        <a class="cta-btn-white" href="#">Apply Now</a>
+        <a class="cta-btn-white" href="/simple-application.html">Apply Now</a>
         <a class="cta-btn-transparent" href="#">Ask us a question</a>
       </div>
     </section>
 
     <footer>
-      <div class="container footer-container">
+      <div class="footer-container">
         <div class="footer-top">
           <div class="logo-col">
             <img style="height: 5rem" src="assets/logo.png" alt="RWS logo" />

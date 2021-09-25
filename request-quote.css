@@ -1,0 +1,30 @@
+/* .request-quote-form {
+  max-width: 800px;
+}
+.premier-order-form .required-instruction {
+  color: var(--color-red);
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 1.5rem;
+}
+.request-quote-form .flex-group .label-input-pair--state {
+  width: 25%;
+}
+.request-quote-form .flex-group .label-input-pair--zip {
+  width: 25%;
+}
+.request-quote-form .flex-group {
+  display: flex;
+}
+.request-quote-form .label-input-pair {
+  width: 50%;
+}
+.premier-order-form .label-input-pair textarea {
+  margin-right: 2rem;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 0.5rem 0.7rem;
+  border-radius: 3px;
+}
+.housing-type-radios {
+  margin-bottom: 2rem;
+} */

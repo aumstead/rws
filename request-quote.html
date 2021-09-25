@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>RWS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./request-quote.css" />
+    <link rel="stylesheet" href="./forms.css" />
+  </head>
+
+  <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img class="rws-logo" src="assets/logo.png" alt="RWS logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="toggle-mobile-nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="">
+          <ul class="navbar-nav">
+            <li id="warranty-plans-dropdown-nav-item" class="dropdown-nav-item">Warranty Plans
+              <ul id="warranty-plans-dropdown-menu" class="dropdown-menu hide-element">
+                <li>
+                  <a href="./premier-policy.html" class="dropdown-link">Premier</a>
+                </li>
+                <li>
+                  <a href="./simple-policy.html" class="dropdown-link">Simple</a>
+                </li>
+              </ul>
+            </li>
+            <li id="purchase-dropdown-nav-item" class="dropdown-nav-item">Purchase Warranty
+              <ul id="purchase-dropdown-menu" class="dropdown-menu hide-element">
+                <li>
+                  <a href="./premier-application.html" class="dropdown-link">Buy Premier</a>
+                </li>
+                <li>
+                  <a href="./simple-application.html" class="dropdown-link">Buy Simple</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="/pricing-plans.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./submit-claim.html">Submit Claim</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./request-quote.html">Request Quote</a>
+            </li>
+          </ul>
+          <div class="buttons-container">
+            <a class="circle-btn-link login-btn">Login</a>
+            <a class="circle-btn-link sign-up-btn">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="side-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a class="navbar-brand" href="/index.html">
+          <img class="rws-logo" src="assets/logo.png" alt="RWS logo" />
+        </a>
+        <button id="mobile-close" type="button" class="close-btn">
+          <img src="/assets/svgs/close-white.svg" alt="X for closing mobile navigation">
+        </button>
+      </div> 
+      <nav>
+        <div class="mobile-nav-btns">
+          <a class="mobile-circle-btn mobile-login-btn">Login</a>
+          <a class="mobile-circle-btn mobile-sign-up-btn">Sign up</a>
+        </div>
+        <hr class="mobile-nav-hr" />
+        <ul>
+          <li id="mobile-plans-dropdown-nav-item" class="mobile-dropdown-nav-item">Warranty Plans</li>
+          <li id="mobile-plans-dropdown-menu" class="mobile-dropdown-menu hide-element">
+            <ul>
+              <li>
+                <a href="./premier-policy.html" class="dropdown-link">Premier</a>
+              </li>
+              <li>
+                <a href="./simple-policy.html" class="dropdown-link">Simple</a>
+              </li>
+            </ul>
+          </li>
+          <li id="mobile-purchase-dropdown-nav-item" class="mobile-dropdown-nav-item">Purchase Warranty</li>
+          <li id="mobile-purchase-dropdown-menu" class="mobile-dropdown-menu hide-element">
+            <ul>
+              <li>
+                <a href="./premier-application.html" class="dropdown-link">Buy Premier</a>
+              </li>
+              <li>
+                <a href="./simple-application.html" class="dropdown-link">Buy Simple</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="" href="/pricing-plans.html">Pricing</a></li>
+          <li><a class="" href="submit-claim.html">Submit Claim</a></li>
+          <li><a class="" href="request-quote.html">Request Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="form-hero">
+        <div class="flex-container">
+          <div class="form-hero-left">
+            <h1>Request Quote</h1>
+            <p>
+              Provide information below and hit 'Submit'.
+            </p>
+            
+          </div>
+          <div class="form-hero-right">
+            <img
+              src="./assets/svgs/form.png"
+              alt="Robot filling in form"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <form action="">
+          <div class="form-container">
+            <h2>Property Info</h2>
+            <hr>
+            <div class="label-input-pair">
+              <label for="property-address">Property Address</label>
+              <input type="text" minlength="2" maxlength="20" name="property-address">
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="city">City<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="1" maxlength="20" name="city">
+              </div>
+              <div class="label-input-pair label-input-pair--state">
+                <label for="state">State<span class="asterisk">&nbsp;*</span></label>
+                <select required id="state" name="state">
+                  <option value="">Select State</option>
+                </select>
+              </div>
+              <div class="label-input-pair label-input-pair--zip">
+                <label for="zip">Zip<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="1" maxlength="15" name="zip">
+              </div>
+            </div>
+
+            <h2>Your Info</h2>
+            <hr>
+
+            <div class="form-section">
+              <p class="custom-label">Which role fits you?</p>
+              <div class="radio-group">
+                <div>
+                  <input type="radio" id="buyer" name="role" value="buyer">
+                  <label for="buyer">Buyer</label>
+                </div>
+                <div>
+                  <input type="radio" id="seller" name="role" value="seller" >
+                  <label for="seller">Seller</label>
+                </div>
+                <div>
+                  <input type="radio" id="existing-homeowner" name="role" value="existing-homeowner" >
+                  <label for="existing-homeowner">Existing Homeowner (home not for sale)</label>
+                </div>              
+              </div>
+            </div>
+
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="first-name">First Name<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="2" maxlength="20" name="first-name">
+              </div>
+              <div class="label-input-pair">
+                <label for="last-name">Last Name<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="2" maxlength="20" name="last-name">
+              </div>
+            </div>
+
+            <div class="label-input-pair">
+              <label for="street">Current Mailing Address<span class="asterisk">&nbsp;*</span></label>
+              <input required type="text" minlength="2" maxlength="20" name="street">
+            </div>
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="city">City<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="1" maxlength="20" name="city">
+              </div>
+              <div class="label-input-pair label-input-pair--state">
+                <label for="state">State<span class="asterisk">&nbsp;*</span></label>
+                <select required id="state" name="state">
+                  <option value="">Select State</option>
+                </select>
+              </div>
+              <div class="label-input-pair label-input-pair--zip">
+                <label for="zip">Zip<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="1" maxlength="15" name="zip">
+              </div>
+            </div>
+            
+            <div class="flex-group">
+              <div class="label-input-pair">
+                <label for="daytime-phone">Daytime Phone Number<span class="asterisk">&nbsp;*</span></label>
+                <input required type="text" minlength="5" maxlength="20" name="daytime-phone">
+              </div>
+              <div class="label-input-pair">
+                <label for="fax-number">Fax Number</label>
+                <input type="text" minlength="5" maxlength="20" name="fax-number">
+              </div>
+            </div>
+
+            <div class="label-input-pair">
+              <label for="email">Email<span class="asterisk">&nbsp;*</span></label>
+              <input type="email" minlength="3" maxlength="20" name="email">
+            </div>
+
+            <div class="label-input-pair">
+              <label for="buyer-name">Buyer(s) Name</label>
+              <input type="text" minlength="3" maxlength="50" name="buyer-name">
+            </div>
+
+            <div class="form-section">
+              <p class="custom-label">Housing Type</p>
+              <div class="radio-group">
+                <div>
+                  <input type="radio" id="single-family" name="housing-type" value="single-family">
+                  <label for="single-family">Single-Family</label>
+                </div>
+                <div>
+                  <input type="radio" id="duplex" name="housing-type" value="duplex" >
+                  <label for="duplex">Duplex</label>
+                </div>
+                <div>
+                  <input type="radio" id="triplex" name="housing-type" value="triplex" >
+                  <label for="triplex">Triplex</label>
+                </div>
+                <div>
+                  <input type="radio" id="fourplex" name="housing-type" value="fourplex" >
+                  <label for="fourplex">Fourplex</label>
+                </div>           
+              </div>
+            </div>
+
+            <div class="label-input-pair">
+              <label for="notes">Notes</label>
+              <textarea name="notes" id="notes" rows="3"></textarea>        
+            </div>
+          </div>  
+          <span class="required-instruction">Fields marked with (*) are required.</span>
+          <button type="submit">Submit</button>        
+        </form>
+      </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="logo-col">
+            <img style="height: 5rem" src="./assets/logo.png" alt="RWS logo" />
+          </div>
+          <div class="links-col">
+            <h6>Why RWS</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Product</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Contact Us</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="img-col">
+            <img src="./assets/security.png" alt="Man defending animation" />
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="copyright">
+            <span>&copy;2021 Residential Warranty Services, Inc.</span>
+            <span
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quo.</span
+            >
+          </div>
+          <div class="legal-links">
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./global.js"></script>
+  </body>
+</html>

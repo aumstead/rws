@@ -3,6 +3,8 @@
   display: flex;
   height: 60vh;
   min-height: 450px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .simple-hero-left {
@@ -10,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 6rem;
+  padding: 0 2rem;
 }
 
 .simple-hero-left h1 {
@@ -33,22 +35,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .simple-hero-right img {
-  max-height: 300px;
+  width: 80%;
 }
 
 /* Simple Helping Section */
 .simple-helping {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   background-color: var(--color-background-gray);
 }
 .simple-helping .flex-container {
   display: flex;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 .simple-helping__left {
   width: 50%;
@@ -68,14 +70,12 @@
 
 /* Simple Repairs Section */
 .simple-repairs {
-  padding: 4rem 0;
-  /* background-color: var(--color-background-gray); */
+  padding: 4rem 2rem;
 }
 .simple-repairs .flex-container {
   display: flex;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 .simple-repairs__left {
   width: 50%;
@@ -91,4 +91,62 @@
 }
 .simple-repairs__right img {
   max-width: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .simple-hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    height: unset;
+  }
+  .simple-hero-left {
+    width: unset;
+  }
+  .simple-hero-right {
+    width: unset;
+    margin-top: 2rem;
+  }
+  .simple-hero-right img {
+    width: unset;
+    max-height: 200px;
+  }
+  .simple-helping .flex-container {
+    flex-direction: column;
+  }
+  .simple-helping__left {
+    width: 100%;
+  }
+  .simple-helping__right {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .simple-helping__left img {
+    width: unset;
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .simple-repairs .flex-container {
+    flex-direction: column;
+    max-width: 1100px;
+  }
+  .simple-repairs__left {
+    width: 100%;
+  }
+  .simple-repairs__right {
+    width: 100%;
+  }
+  .simple-repairs__right img {
+    max-height: 200px;
+    max-width: unset;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .simple-hero-right img {
+    max-height: unset;
+    width: 80%;
+  }
 }

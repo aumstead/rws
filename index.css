@@ -351,7 +351,9 @@
     width: unset;
     margin-top: 1rem;
   }
-
+  .redirect-cards-section {
+    padding-bottom: 4rem;
+  }
   .redirect-cards-container {
     grid-template-columns: 1fr 1fr;
   }

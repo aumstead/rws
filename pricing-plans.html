@@ -32,13 +32,53 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#">Benefits</a>
-            <a class="nav-link" href="/pricing-plans.html">Pricing & Plans</a>
-            <a class="nav-link" href="#">Order Warranty</a>
-            <a class="nav-link" href="#">Contractors</a>
-            <a class="nav-link" href="/premier-policy.html">Premier Plan</a>
-          </div>
+          <ul class="navbar-nav">
+            <li id="warranty-plans-dropdown-nav-item" class="dropdown-nav-item">
+              Warranty Plans
+              <ul
+                id="warranty-plans-dropdown-menu"
+                class="dropdown-menu hide-element"
+              >
+                <li>
+                  <a href="./premier-policy.html" class="dropdown-link"
+                    >Premier</a
+                  >
+                </li>
+                <li>
+                  <a href="./simple-policy.html" class="dropdown-link"
+                    >Simple</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="purchase-dropdown-nav-item" class="dropdown-nav-item">
+              Purchase Warranty
+              <ul
+                id="purchase-dropdown-menu"
+                class="dropdown-menu hide-element"
+              >
+                <li>
+                  <a href="./premier-application.html" class="dropdown-link"
+                    >Buy Premier</a
+                  >
+                </li>
+                <li>
+                  <a href="./simple-application.html" class="dropdown-link"
+                    >Buy Simple</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="/pricing-plans.html">Pricing</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./submit-claim.html">Submit Claim</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./request-quote.html">Request Quote</a>
+            </li>
+          </ul>
           <div class="buttons-container">
             <a class="circle-btn-link login-btn">Login</a>
             <a class="circle-btn-link sign-up-btn">Sign up</a>
@@ -47,19 +87,75 @@
       </div>
     </nav>
 
-    <nav class="mobile-nav" id="side-nav">
-      <div class="mobile-nav-btns">
-        <a class="circle-btn-link mobile-login-btn">Login</a>
-        <a class="circle-btn-link sign-up-btn">Sign up</a>
+    <div id="side-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a class="navbar-brand" href="/index.html">
+          <img class="rws-logo" src="assets/logo.png" alt="RWS logo" />
+        </a>
+        <button id="mobile-close" type="button" class="close-btn">
+          <img
+            src="/assets/svgs/close-white.svg"
+            alt="X for closing mobile navigation"
+          />
+        </button>
       </div>
-      <hr class="mobile-nav-hr" />
-      <ul>
-        <li><a class="" href="#">Benefits</a></li>
-        <li><a class="" href="#">Pricing & Plans</a></li>
-        <li><a class="" href="#">Order Warranty</a></li>
-        <li><a class="" href="#">Contractors</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <div class="mobile-nav-btns">
+          <a class="mobile-circle-btn mobile-login-btn">Login</a>
+          <a class="mobile-circle-btn mobile-sign-up-btn">Sign up</a>
+        </div>
+        <hr class="mobile-nav-hr" />
+        <ul>
+          <li
+            id="mobile-plans-dropdown-nav-item"
+            class="mobile-dropdown-nav-item"
+          >
+            Warranty Plans
+          </li>
+          <li
+            id="mobile-plans-dropdown-menu"
+            class="mobile-dropdown-menu hide-element"
+          >
+            <ul>
+              <li>
+                <a href="./premier-policy.html" class="dropdown-link"
+                  >Premier</a
+                >
+              </li>
+              <li>
+                <a href="./simple-policy.html" class="dropdown-link">Simple</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            id="mobile-purchase-dropdown-nav-item"
+            class="mobile-dropdown-nav-item"
+          >
+            Purchase Warranty
+          </li>
+          <li
+            id="mobile-purchase-dropdown-menu"
+            class="mobile-dropdown-menu hide-element"
+          >
+            <ul>
+              <li>
+                <a href="./premier-application.html" class="dropdown-link"
+                  >Buy Premier</a
+                >
+              </li>
+              <li>
+                <a href="./simple-application.html" class="dropdown-link"
+                  >Buy Simple</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a class="" href="/pricing-plans.html">Pricing</a></li>
+          <li><a class="" href="submit-claim.html">Submit Claim</a></li>
+          <li><a class="" href="request-quote.html">Request Quote</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <section>
@@ -68,11 +164,14 @@
             <h1>Choose the coverage that works for you</h1>
             <p>
               Select from our newly offered
-              <a class="inline-link" href="#">Premier Plan</a> or our seasoned
-              and vetted <a class="inline-link" href="#">Simple Plan</a>.
+              <a class="inline-link" href="/premier-policy.html"
+                >Premier Plan</a
+              >
+              or our reliable and seasoned
+              <a class="inline-link" href="/simple-policy.html">Simple Plan</a>.
             </p>
             <div class="pricing-hero-btns">
-              <a href="#" class="flat-link"
+              <a href="#compare-plans" class="flat-link"
                 >Compare plans <span class="arrow"></span
               ></a>
             </div>
@@ -132,7 +231,9 @@
               Doloremque, veniam omnis?
             </p>
             <div class="pricing-cards-card__cta">
-              <a class="circle-btn-link" href="#">Order Premier</a>
+              <a class="circle-btn-link" href="/premier-application.html"
+                >Order Premier</a
+              >
             </div>
             <div class="pricing-cards-card__prices-container">
               <span class="pricing-cards-card__total"
@@ -166,7 +267,9 @@
             <h3>Simple</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             <div class="pricing-cards-card__cta">
-              <a class="circle-btn-link" href="#">Order Simple</a>
+              <a class="circle-btn-link" href="/simple-application.html"
+                >Order Simple</a
+              >
             </div>
             <div class="pricing-cards-card__prices-container">
               <span class="pricing-cards-card__total"
@@ -206,7 +309,9 @@
               conditions and we offer a best coverage guarantee.
             </p>
             <div class="premier-btns">
-              <a class="circle-btn-link sign-up-btn">Read More</a>
+              <a href="/premier-policy.html" class="circle-btn-link sign-up-btn"
+                >Read More</a
+              >
             </div>
           </div>
           <div class="premier__right">
@@ -233,10 +338,13 @@
               eligendi inventore dolorum?
             </p>
             <div class="pricing-simple-btns">
-              <a class="circle-btn-link sign-up-btn">Read More</a>
+              <a href="/simple-policy.html" class="circle-btn-link sign-up-btn"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
+        <a id="compare-plans"></a>
       </section>
 
       <section class="full-feature">
@@ -655,15 +763,15 @@
     </main>
 
     <section class="cta-section">
-      <h2 class="text-center">Secure your home with us.</h2>
+      <h2 class="text-center">Secure your home the premier policy.</h2>
       <div class="cta-btns">
-        <a class="cta-btn-white" href="#">Apply Now</a>
+        <a class="cta-btn-white" href="/premier-application.html">Apply Now</a>
         <a class="cta-btn-transparent" href="#">Ask us a question</a>
       </div>
     </section>
 
     <footer>
-      <div class="container footer-container">
+      <div class="footer-container">
         <div class="footer-top">
           <div class="logo-col">
             <img style="height: 5rem" src="assets/logo.png" alt="RWS logo" />
