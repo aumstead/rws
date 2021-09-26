@@ -190,19 +190,6 @@ td {
   font-weight: 500;
 }
 
-/* Go Green */
-.go-green .flex-box--yes {
-  display: flex;
-  align-items: start;
-}
-.go-green .flex-box--yes input {
-  margin-top: 0.4rem;
-}
-.go-green .flex-box--no {
-  display: flex;
-  align-items: center;
-}
-
 /* Footer for forms pages */
 footer {
   padding-top: 2rem;
@@ -262,14 +249,5 @@ footer {
   }
   .form .label-input-pair textarea {
     margin-right: unset;
-  }
-  .go-green .flex-box--yes {
-    margin-bottom: 1rem;
-  }
-  .go-green .flex-box--no {
-    align-items: start;
-  }
-  .go-green .flex-box--no input {
-    margin-top: 0.4rem;
   }
 }
