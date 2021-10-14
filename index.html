@@ -157,118 +157,128 @@
 
     <section style="padding-top: 80px">
       <div class="hero">
-        <div class="hero-left">
-          <h1>Lorem, ipsum dolor.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-            numquam omnis velit repellat eius quas? Dolorum iure eos rerum?
-            Tempora quidem aut aliquid eum odio.
-          </p>
-          <div class="hero-left__btns">
-            <a
-              href="./premier-application.html"
-              class="circle-btn-link sign-up-btn"
-              >APPLY NOW</a
+        <img class="hero-logo" src="assets/original-logo.png" alt="RWS logo" />
+        <div class="carousel-container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="12000"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/carousel/PremierSlide.png"
+                  class="d-block w-100"
+                  alt="RWS map"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/carousel/map.png"
+                  class="d-block w-100"
+                  alt="Premier slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/carousel/PRPPSlide.png"
+                  class="d-block w-100"
+                  alt="PRPPSlide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/carousel/SewerGardSlid.png"
+                  class="d-block w-100"
+                  alt="Sewer Gard"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
             >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <div class="hero-right">
-          <img
-            class="rws-building"
-            src="assets/rws-building.png"
-            alt="RWS building"
-          />
-          <div class="hero-right__text">
-            <span id="hero-anim" class="animate-hero-text">Lorem Coverage</span>
+        <div class="hero-flexbox">
+          <div class="hero-left">
+            <p>
+              Residential Warranty Services ("RWS") has been offering home
+              warranties since 1988. We are the market leader in many areas of
+              the country, and growing in other parts! We currently offer
+              one-year warranties in ALL 50 states and Washington D.C. For
+              one-year warranties in
+              <a href="https://homewarrantycalifornia.net/"
+                >California, click here</a
+              >. For one-year warranties in
+              <a href="https://rwshomeservicecontracts.com/"
+                >IA, IL, NY, TX, VA, or WI, click here</a
+              >.
+            </p>
+            <!-- <div class="hero-left__btns">
+              <a
+                href="./premier-application.html"
+                class="circle-btn-link sign-up-btn"
+                >APPLY NOW</a
+              >
+            </div> -->
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="carousel-section">
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-      <div class="carousel-container">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
+          <div class="hero-right">
+            <img
+              class="rws-building"
+              src="assets/rws-building.png"
+              alt="RWS building"
+            />
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="assets/carousel/map.png"
-                class="d-block w-100"
-                alt="RWS map"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/carousel/PremierSlide.png"
-                class="d-block w-100"
-                alt="Premier slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/carousel/PRPPSlide.png"
-                class="d-block w-100"
-                alt="PRPPSlide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/carousel/SewerGardSlid.png"
-                class="d-block w-100"
-                alt="Sewer Gard"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </section>
@@ -283,14 +293,14 @@
         ></iframe>
       </div>
       <div class="video__right">
-        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Choose the coverage that works best for you.</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-          adipisci consequatur ipsum, similique debitis autem!
+          The most comprehensive warranty in the country, and the only warranty
+          backed by a 100% satisfaction guarantee.
         </p>
         <div class="video-link">
           <a href="./premier-policy.html" class="flat-link"
-            >Read more lorem <span class="arrow"></span
+            >Read more <span class="arrow"></span
           ></a>
         </div>
       </div>
@@ -304,24 +314,24 @@
             <span>1</span>
             <h3>Choose a policy</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-              iste recusandae nam.
+              Select from our newly offered Premier Plan or our go with our
+              classic, time-tested Simple Warranty.
             </p>
           </div>
           <div class="col get-started-col">
             <span>2</span>
-            <h3>Fill out application</h3>
+            <h3>Fill out an application</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-              tempora vitae, ad sit adipisci minus nostrum!
+              Provide us with a few details about your property, agents, and
+              dates, and you're ready to be covered.
             </p>
           </div>
           <div class="col get-started-col">
             <span>3</span>
-            <h3>Lorem ipsum dolor sit</h3>
+            <h3>Wait to hear from us</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-              tenetur sit eaque aperiam laborum.
+              Sit back, relax, and wait for one of our customer service agents
+              to contact you about the details of your warranty.
             </p>
           </div>
         </div>
@@ -365,9 +375,7 @@
             />
           </div>
           <div class="card-content">
-            <h3>
-              Get an estimate for your property. Lorem ipsum dolor sit amet.
-            </h3>
+            <h3>Get an estimate for your property.</h3>
             <div class="card-cta">
               <span>Request quote</span>
             </div>
@@ -392,15 +400,28 @@
       <div class="container premier-container">
         <div class="premier__left">
           <h6>Just Launched</h6>
-          <h2>Lorem Premier</h2>
+          <h2>The Premier Plan</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
-            dolor enim ad ipsum. Dolores dolor veniam maiores sapiente.
+            The most comprehensive warranty in the country, and the only
+            warranty backed by a 100% satisfaction guarantee.
           </p>
           <div class="premier-btns">
-            <a href="/premier-policy.html" class="circle-btn-link sign-up-btn"
+            <!-- <a href="/premier-policy.html" class="circle-btn-link sign-up-btn"
               >Read More</a
-            >
+            > -->
+            <p>
+              To see details of this plan, download our&nbsp;<a
+                class="plain-link"
+                href="https://rwswarranty.com/javax.faces.resource/Simple_Warranty_Bifold.pdf.xhtml?ln=files"
+                >brochure</a
+              >
+              or a
+              <a
+                class="plain-link"
+                href="https://rwswarranty.com/javax.faces.resource/Simple_Warranty_Bifold.pdf.xhtml?ln=files"
+                >sample policy</a
+              >.
+            </p>
           </div>
         </div>
         <div class="premier__right">
@@ -421,11 +442,9 @@
           />
         </div>
         <div class="simple__right">
-          <h2>Lorem Simple</h2>
+          <h2>The Simple Warranty</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
-            repudiandae, soluta dolorum laborum atque, ipsum illum blanditiis ut
-            aliquid tempore recusandae!
+            The guaranteed best price, and better coverage than the competition.
           </p>
           <div class="simple-btns">
             <a
@@ -447,55 +466,40 @@
     </section>
 
     <footer>
-      <div class="footer-container">
-        <div class="footer-top">
-          <div class="logo-col">
-            <img style="height: 5rem" src="assets/logo.png" alt="RWS logo" />
-          </div>
-          <div class="links-col">
-            <h6>Why RWS</h6>
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </div>
-          <div class="links-col">
-            <h6>Product</h6>
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </div>
-          <div class="links-col">
-            <h6>Contact Us</h6>
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </div>
-          <div class="img-col">
-            <img src="assets/security.png" alt="Man defending animation" />
-          </div>
-        </div>
-        <hr />
-        <div class="footer-bottom">
-          <div class="copyright">
+      <div class="footer-container" id="footer-home">
+        <div class="footer-grid">
+          <div class="copyright-col" id="copyright-col-home">
             <span>&copy;2021 Residential Warranty Services, Inc.</span>
-            <span
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quo.</span
-            >
+            <span>P.O. Box 797 Carmel, IN 46082</span>
+            <span>Toll Free: 1-800-544-8156</span>
+            <span>Fax: 1-877-307-7056</span>
           </div>
-          <div class="legal-links">
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem</li>
-              <li>Lorem ipsum</li>
-            </ul>
+          <div class="social-media-col">
+            <span>Follow Us:</span>
+            <a
+              href="https://www.facebook.com/residentialwarranty"
+              target="_blank"
+            >
+              <img src="assets/svgs/facebook.svg" alt="Facebook logo" />
+            </a>
+            <a href="https://twitter.com/rws_warranty" target="_blank">
+              <img src="assets/svgs/twitter.svg" alt="Twitter logo" />
+            </a>
+            <a href="https://www.youtube.com/user/rwswarranty" target="_blank">
+              <img src="assets/svgs/youtube.svg" alt="YouTube logo" />
+            </a>
+          </div>
+          <div class="links-col" id="links-col-1-home">
+            <a href="/">Home</a>
+            <a href="">Benefits</a>
+            <a href="/pricing-plans.html">Pricing</a>
+            <a href="/premier-application.html">Order</a>
+          </div>
+          <div class="links-col" id="links-col-2-home">
+            <a href="/submit-claim.html">Submit a Claim</a>
+            <a href="/request-quote.html">Request Info</a>
+            <a href="">Careers</a>
+            <a href="">Privacy Policy</a>
           </div>
         </div>
       </div>

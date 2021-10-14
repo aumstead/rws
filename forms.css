@@ -190,12 +190,6 @@ td {
   font-weight: 500;
 }
 
-/* Footer for forms pages */
-footer {
-  padding-top: 2rem;
-  background-color: var(--color-background-gray);
-}
-
 @media only screen and (max-width: 600px) {
   .form hr {
     margin-right: unset;
